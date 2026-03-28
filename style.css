@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #1e293b, #020617);
+  color: #e2e8f0;
+}
+
+/* Header */
+header {
+  height: 80px;
+  background: linear-gradient(90deg, #06b6d4, #6366f1, #ec4899);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 600;
+  color: white;
+}
+
+/* Search */
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+}
+
+.search-box input {
+  width: 320px;
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  backdrop-filter: blur(10px);
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.filters button {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: none;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  cursor: pointer;
+}
+
+.filters .active {
+  background: linear-gradient(90deg, #06b6d4, #6366f1);
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  padding: 30px;
+}
+
+/* Card */
+.card {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+/* Image */
+.card img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+/* Content */
+.card-content {
+  padding: 15px;
+}
+
+.card-content p {
+  color: #94a3b8;
+  padding-bottom: 0cm;
+}
+
+/* Button */
+.card button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #22c55e, #06b6d4);
+  color: white;
+  cursor: pointer;
+}
+
+/* History */
+.history-title {
+  margin-left: 30px;
+}

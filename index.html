@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Library 2026</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  📚 Book Library
+</header>
+
+<!-- Search -->
+<div class="search-box">
+  <input type="text" id="search" placeholder="Search books...">
+</div>
+
+<!-- Filters -->
+<div class="filters">
+  <button class="active" onclick="filterBooks(event,'All')">All</button>
+  <button onclick="filterBooks(event,'Fiction')">Fiction</button>
+  <button onclick="filterBooks(event,'Non-Fiction')">Non-Fiction</button>
+  <button onclick="filterBooks(event,'Science')">Science</button>
+</div>
+
+<!-- Books -->
+<div id="book-list" class="grid"></div>
+
+<!-- History -->
+<h2 class="history-title">📜 Borrow History</h2>
+<div id="history" class="grid"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
